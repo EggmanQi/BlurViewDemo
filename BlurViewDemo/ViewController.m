@@ -25,6 +25,15 @@ typedef enum : NSUInteger {
 	[super viewDidLoad];
 	
 	_type = BlurType_STACK; 
+	
+//	[UIView animateWithDuration:1 delay:0 options:UIViewAnimationOptionRepeat animations:^{
+//		CGAffineTransform transform = CGAffineTransformScale(self.img_blur.transform, 5, 5);
+//		[self.img_blur setTransform:transform];
+//	} completion:^(BOOL finished) {
+//		CGAffineTransform transform = CGAffineTransformInvert(CGAffineTransformMakeScale(1, 1));
+//		[self.img_blur setTransform:transform];
+//	}];
+	
 }
 
 - (IBAction)didSlide:(UISlider *)sender {
